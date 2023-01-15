@@ -1,0 +1,104 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+h1{
+	padding: 20px;
+	color: red;
+	text-align: center;
+
+}
+
+body{
+	display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.no-flex{
+	width: 100%;
+}
+.info{
+	/* display: inline-block; */
+	top: 2%;
+	left: 1%;
+	position: sticky;
+	margin-top: 18px;
+	padding: 0 20px;
+	color: white;
+	background-color: #444;
+	height: 150px;
+	border-radius: 10px;
+	width: 360px;
+}
+.info > ul{
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	list-style: none;
+}
+.info > ul > li{
+	height: 30px;
+}
+.info_span{
+	vertical-align: middle;
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	background-color: rgb(222, 23, 23);
+	border: 1px solid white;
+}
+
+.wrapper {
+	margin-left: auto;
+	padding: 20px;
+	flex-basis: 10%;
+    flex-grow: 2;
+	display: flex;
+	justify-content: right;
+	align-content: center;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.userData {
+	min-width: 300px;
+	height: auto;
+	background-color: antiquewhite;
+	border-radius: 10px;
+	font-size: 18px;
+}
+.inBlackList{
+	background-color: darkred;
+}
+.data {
+	padding: 10px;
+	list-style: none;
+}
+
+.list{
+	margin: 5px 0;
+	display: flex;
+	align-items: center;
+	border-collapse: collapse;
+	background-color: antiquewhite;
+}
+.fieldsOfData{
+	background-color: rgb(222, 23, 23);
+}
+.fieldsOfData > span{
+	color: white;
+	border-color: white;
+}
+.grow{
+	flex-grow: 1;
+	text-align: center;
+	border: 1px solid #444;
+	border-left: 0px;
+}
+.no_grow{
+	text-align: center;
+	width: 70px;
+	flex-grow: 0;
+	border: 1px solid #444;
+}
